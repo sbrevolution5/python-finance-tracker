@@ -16,17 +16,23 @@ class User(object):
     def add_asset(self, name, value):
         self.assets.append({name: name, value: value})
         self.total_assets += value
+        #updates networth when it is called
+        self.get_networth()
         return self
 
     def add_liability(self, name, value):
         self.liabilities.append({name: name, value: value})
         self.total_liabilities += value
+        self.get_networth()
         return self
     
     def add_account(self, account_object):
           self.accounts.append(account_object)
           return self
-    
+
+    def get_networth(self):
+          self.net_worth = self.total_assets - self.total_liabilities
+          return self
 
 
 class Account(object):
