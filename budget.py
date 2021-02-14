@@ -42,11 +42,11 @@ class Account(object):
         self.ledger = []  # TODO initialize with the initial amount and date
         self.total = initial
         self.intrest = 0
+    
     def deposit(self, amount, desc="", category="general"):
         self.ledger.append({"amount": amount, "description": desc})
         self.total += amount
         # should update the category child object as well
-        
         return self
 
 
