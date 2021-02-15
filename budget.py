@@ -100,7 +100,7 @@ class Category(object):
 
     def __str__(self):
         resultStr = ""
-        resultStr += self.name.center(30, '*')
+        #resultStr += self.name.center(30, '*')
         resultStr += "\n"
         i = 0
         for line in self.ledger:
