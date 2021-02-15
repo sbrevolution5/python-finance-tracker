@@ -43,10 +43,16 @@ class Account(object):
         self.total = initial
         self.intrest = 0
     
-    def deposit(self, amount, desc="", category="general"):
+    def deposit(self, amount, desc="", category="deposit"): #this method may not have a category.
         self.ledger.append({"amount": amount, "description": desc})
         self.total += amount
         # should update the category child object as well
+        return self
+
+    def withdrawl(self, amount, desc="", category="general"):
+        self.ledger.append({"amount": amount, "description": desc})
+        self.total += amount
+        #should update category object
         return self
 
 
