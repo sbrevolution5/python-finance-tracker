@@ -35,13 +35,10 @@ cat_entry = ttk.Entry(mainframe, width=7, textvariable=cat)
 cat_entry.grid(column=2, row=1, sticky=(W, E))
 
 ttk.Button(mainframe, text="Create Category", command=newCat(cat)).grid(column=3, row=3, sticky=W)
+ttk.Button(mainframe, text="Add Expense", command=newCat(cat)).grid(column=1, row=3, sticky=W)
+ttk.Button(mainframe, text="Add income", command=newCat(cat)).grid(column=2, row=3, sticky=W)
 
 #Need a table to display transactions/ledger, but the problem is that tkinter doesn't include a table widget or anything really like it.
 
-# ACCOUNTS LIST
-accounts = ["checking", "savings", "investment"]
-accountsvar = StringVar(value=catNameList)
-l = Listbox(mainframe, listvariable=accountsvar)
-l.grid(column=1, row=1)
 
 root.mainloop()
