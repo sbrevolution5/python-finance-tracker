@@ -6,7 +6,7 @@ currently has category class which functions like an account.
 Allows user to deposit and withdrawl from the category, and then create a chart that shows what percentage of the total budget was spent in a month.
 
 # Base features
-Can add transactions to dataframe
+Can add transactions to dataframe and import dataframe
     dataframe has 4 columns Deposit (bool),Amount(float),Date(Date),Category(Categorical),Description(String)
 will tell us balance
 

@@ -1,0 +1,10 @@
+Deposit,Amount,Date,Category,Description
+true,3000.00,2-1-2021,"Deposit","Paycheck"
+false,900.00,2-2-2021,"Bill","Mortgage"
+false,60.00,2-2-2021,"Bill","Water"
+false,60.00,2-2-2021,"Bill","Power"
+false,17.48,2-2-2021,"Food","Dinner"
+false,87.68,2-3-2021,"Auto","Car Payment"
+false,40.34,2-3-2021,"Entertainment","Movie Tickets, Deadpool 4"
+false,23.43,2-4-2021,"Entertainment","Drinks at Old Bill's Bar"
+false,63.87,2-5-2021,"Entertainment","new GTA game"
