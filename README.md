@@ -3,7 +3,13 @@ A financial tracking application built in python with tktinker
 
 # features and functionality
 currently has category class which functions like an account.  
-Allows user to deposit and withdrawl from the category, and then create a chart that shows what percentage of the total budget was spent in a month.  
+Allows user to deposit and withdrawl from the category, and then create a chart that shows what percentage of the total budget was spent in a month.
+
+# Base features
+Can add transactions to dataframe
+    dataframe has 4 columns Deposit (bool),Amount(float),Date(Date),Category(Categorical),Description(String)
+will tell us balance
+
 # TODO List
 Inputs for new financial records
 more ways to process/analyze the data
