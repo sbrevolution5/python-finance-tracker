@@ -8,8 +8,8 @@ from PyQt5.QtCore import QAbstractTableModel, Qt
 import pandas as pd
 
 # load dataframe with sample data
-db = pd.read_csv("./sampledata.csv")
-print(db)
+ledger = pd.read_csv("./sampledata.csv")
+
 
 # Display in pyqt
 # this needs to be linked with my table ui, unless we add the buttons here.  
@@ -35,10 +35,10 @@ class pandasModel(QAbstractTableModel):
         if orientation == Qt.Horizontal and role == Qt.DisplayRole:
             return self._data.columns[col]
         return None
-
+print(type(pandasModel(ledger)))
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    model = pandasModel(db)
+    model = pandasModel(ledger)
     view = QTableView()
     view.setModel(model)
     view.resize(800, 600)

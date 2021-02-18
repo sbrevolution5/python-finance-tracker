@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>New Income</string>
+   <string>New Record</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
@@ -90,8 +90,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>390</x>
-     <y>195</y>
+     <x>486</x>
+     <y>202</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
